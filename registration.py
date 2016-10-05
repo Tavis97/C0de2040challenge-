@@ -5,8 +5,13 @@ def registration():
   url = "http://challenge.code2040.org/api/register"
   r = requests.post( url , info_rmation)
 
-mystring = 'mwetpklz'
+stringt = {'token': token, 'string': 'http://challenge.code2040.org/api/reverse'}
+url= 'http://challenge.code2040.org/api/reverse'
+mystring = requests.post( url, stringt)
 string = mystring[::-1]
 url_1 = "http://challenge.code2040.org/api/reverse"
 info = {'token': token , 'string': string}
 re = requests.post( url_1, info)
+url_1 = "http://challenge.code2040.org/api/reverse/validate"
+
+
